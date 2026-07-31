@@ -1,0 +1,4 @@
+Figure X. Descriptive outcomes of cross-source comparisons. a, Numbers of judgments favoring human-
+proposed hypotheses, LLM-generated hypotheses, or a tie in each evaluation dimension. b, Expert-
+level shares of LLM selections among decisive cross-source judgments. c, Expert-level tie rates in
+cross-source judgments.

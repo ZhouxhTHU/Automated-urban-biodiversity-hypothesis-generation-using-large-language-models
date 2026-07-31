@@ -1,0 +1,37 @@
+{
+  "human_results": "All_Comparison_Results.xlsx",
+  "llm_runs": [
+    {
+      "label": "claude",
+      "path": "LLMJudge_results\\comparison_results_claude.xlsx"
+    },
+    {
+      "label": "gemini",
+      "path": "LLMJudge_results\\comparison_results_gemini.xlsx"
+    },
+    {
+      "label": "gpt",
+      "path": "LLMJudge_results\\comparison_results_gpt.xlsx"
+    }
+  ],
+  "key_columns": [
+    "Expert_ID",
+    "Hypothesis_A_ID",
+    "Hypothesis_B_ID",
+    "Dimension"
+  ],
+  "outcomes": [
+    "A_wins",
+    "B_wins",
+    "Tie"
+  ],
+  "rope": [
+    -0.1,
+    0.1
+  ],
+  "notes": [
+    "Agreement metrics are computed on normalized outcomes: A_wins, B_wins, Tie.",
+    "Gwet AC2 uses quadratic weights with Tie treated as the middle category.",
+    "Hypothesis aggregate scores use win=1, tie=0.5, loss=0."
+  ]
+}

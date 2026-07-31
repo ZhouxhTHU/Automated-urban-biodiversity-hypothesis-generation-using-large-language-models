@@ -1,0 +1,10 @@
+﻿human_outcome,model,A_wins,B_wins,Tie
+A_wins,claude,808,839,6
+B_wins,claude,750,832,7
+Tie,claude,373,433,2
+A_wins,gemini,865,764,24
+B_wins,gemini,778,793,18
+Tie,gemini,410,378,20
+A_wins,gpt,791,860,2
+B_wins,gpt,720,869,0
+Tie,gpt,374,434,0

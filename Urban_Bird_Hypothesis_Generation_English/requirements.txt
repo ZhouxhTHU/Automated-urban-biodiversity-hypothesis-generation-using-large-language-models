@@ -1,0 +1,8 @@
+agentscope
+numpy
+openai
+requests
+scikit-learn
+scikit-learn-extra
+scipy
+sentence-transformers

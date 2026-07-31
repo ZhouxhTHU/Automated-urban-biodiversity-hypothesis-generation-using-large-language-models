@@ -1,0 +1,15 @@
+name: llmjudge-btl
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - numpy
+  - pandas
+  - openpyxl
+  - scipy
+  - pymc
+  - pytensor
+  - arviz
+  - matplotlib
+  - netcdf4
+  - xarray

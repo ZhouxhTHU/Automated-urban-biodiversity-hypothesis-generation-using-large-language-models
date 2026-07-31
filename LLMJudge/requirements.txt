@@ -1,0 +1,11 @@
+arviz
+h5py
+matplotlib
+netCDF4
+numpy
+openpyxl
+pandas
+pymc
+pytensor
+requests
+xarray

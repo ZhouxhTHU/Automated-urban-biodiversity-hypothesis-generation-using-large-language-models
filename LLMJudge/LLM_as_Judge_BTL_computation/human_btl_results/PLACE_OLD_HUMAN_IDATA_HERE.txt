@@ -1,0 +1,7 @@
+If you want to reuse the already fitted human posterior, put these three files here before running submit_btl_reuse_human.slurm:
+
+idata_Novelty.nc
+idata_Significance.nc
+idata_Testability.nc
+
+If this folder does not contain those three files, use submit_btl_full.slurm instead.

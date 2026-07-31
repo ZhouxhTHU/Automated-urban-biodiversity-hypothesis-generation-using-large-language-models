@@ -1,0 +1,19 @@
+Recommended order on the HPC:
+
+1. Upload this whole folder to the HPC.
+2. Enter the uploaded folder.
+3. Run a small environment test:
+   sbatch submit_btl_smoke.slurm
+4. Check logs after it finishes:
+   ls logs
+   cat logs/btl_smoke_<jobid>.out
+   cat logs/btl_smoke_<jobid>.err
+5. If the smoke test is OK, run the full BTL analysis:
+   sbatch submit_btl_full.slurm
+
+If you have already fitted human posterior files, put idata_Novelty.nc, idata_Significance.nc, and idata_Testability.nc into human_btl_results, then run:
+
+sbatch submit_btl_reuse_human.slurm
+
+submit_btl_full.slurm reruns human + claude + gemini + gpt.
+submit_btl_reuse_human.slurm reuses old human posterior and only samples claude + gemini + gpt.
