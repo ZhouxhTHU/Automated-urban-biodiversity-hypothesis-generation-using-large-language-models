@@ -1,0 +1,28 @@
+WARNING (pytensor.tensor.blas): Using NumPy C-API based implementation for BLAS functions.
+Auto-assigning NUTS sampler...
+Initializing NUTS using adapt_diag...
+Multiprocess sampling (4 chains in 4 jobs)
+NUTS: [mu_LLM, sigma_LLM, z_expert, tie_logit]
+Sampling 4 chains for 4_000 tune and 2_000 draw iterations (16_000 + 8_000 draws total) took 118 seconds.
+Traceback (most recent call last):
+  File "<HPC_WORKSPACE>/LLM_as_Judge/run_bayesian_btl_analysis.py", line 222, in <module>
+    main()
+  File "<HPC_WORKSPACE>/LLM_as_Judge/run_bayesian_btl_analysis.py", line 190, in main
+    idata = run_one_dataset(spec, dimension, args.output_dir, args.skip_existing)
+  File "<HPC_WORKSPACE>/LLM_as_Judge/run_bayesian_btl_analysis.py", line 119, in run_one_dataset
+    df = btl.load_and_preprocess_data(spec.path)
+  File "<HPC_WORKSPACE>/LLM_as_Judge/expertrankhypothesisv2.py", line 50, in load_and_preprocess_data
+    df = pd.read_excel(file_path)
+  File "<HPC_HOME>/WORK/miniconda3/envs/LLMpy39/lib/python3.9/site-packages/pandas/io/excel/_base.py", line 495, in read_excel
+  File "<HPC_HOME>/WORK/miniconda3/envs/LLMpy39/lib/python3.9/site-packages/pandas/io/excel/_base.py", line 1537, in __init__
+  File "<HPC_HOME>/WORK/miniconda3/envs/LLMpy39/lib/python3.9/site-packages/pandas/compat/_optional.py", line 135, in import_optional_dependency
+  File "<HPC_HOME>/WORK/miniconda3/envs/LLMpy39/lib/python3.9/importlib/__init__.py", line 127, in import_module
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 982, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 925, in _find_spec
+  File "<frozen importlib._bootstrap_external>", line 1423, in find_spec
+  File "<frozen importlib._bootstrap_external>", line 1395, in _get_spec
+  File "<frozen importlib._bootstrap_external>", line 1526, in find_spec
+  File "<frozen importlib._bootstrap_external>", line 1569, in _fill_cache
+OSError: [Errno 5] Input/output error: '<HPC_HOME>/WORK/miniconda3/envs/LLMpy39/lib/python3.9'

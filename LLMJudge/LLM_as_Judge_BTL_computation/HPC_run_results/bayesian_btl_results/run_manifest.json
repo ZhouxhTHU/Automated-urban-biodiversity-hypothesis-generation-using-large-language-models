@@ -1,0 +1,34 @@
+{
+  "draws": 2000,
+  "tune": 4000,
+  "chains": 4,
+  "cores": 4,
+  "target_accept": 0.99,
+  "rope": [
+    -0.1,
+    0.1
+  ],
+  "datasets": [
+    {
+      "label": "human",
+      "path": "All_Comparison_Results.xlsx"
+    },
+    {
+      "label": "claude",
+      "path": "claude_comparison_results.xlsx"
+    },
+    {
+      "label": "gemini-3.5-flash-thinking",
+      "path": "gemini_comparison_results.xlsx"
+    },
+    {
+      "label": "gpt-5.5",
+      "path": "gpt_comparison_results.xlsx"
+    }
+  ],
+  "dimensions": [
+    "Novelty",
+    "Significance",
+    "Testability"
+  ]
+}
